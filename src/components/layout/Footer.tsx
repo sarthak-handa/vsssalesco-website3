@@ -16,6 +16,7 @@ const company = [
   { href: '/case-studies', label: 'Case Studies' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
+  { href: '/privacy', label: 'Privacy Policy' },
 ];
 
 export default function Footer() {
@@ -25,23 +26,29 @@ export default function Footer() {
       <div className="border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="section-label text-red-400 mb-2">Ready to transform your space?</p>
+            <p className="section-label text-red-400 mb-2">Smart Security Since 2010</p>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold text-white">
-              Let&apos;s build your smart home.
+              Get a Free Security Consultation Today
             </h2>
           </div>
           <div className="flex gap-3">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-red text-white font-display font-semibold text-sm rounded-full transition-all hover:bg-red-600 shadow-red"
+            >
+              Free Consultation
+            </Link>
             <a
-              href={`https://wa.me/${SITE_CONFIG.whatsapp}`}
+              href={`https://wa.me/${SITE_CONFIG.whatsapp}?text=Hi%20VSS%20Salesco%2C%20I%20need%20a%20security%20consultation.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-red text-white font-display font-semibold text-sm rounded transition-all hover:bg-red-600"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white font-display font-semibold text-sm rounded-full transition-all hover:border-white/50"
             >
               WhatsApp Us
             </a>
             <a
               href={`tel:${SITE_CONFIG.phone}`}
-              className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white font-display font-semibold text-sm rounded transition-all hover:border-white/50"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white font-display font-semibold text-sm rounded-full transition-all hover:border-white/50"
             >
               Call Now
             </a>
@@ -55,17 +62,19 @@ export default function Footer() {
         <div className="lg:col-span-1">
           <div className="flex items-center gap-3 mb-6">
             <div className="relative w-10 h-10">
-              <Image src="/logo.png" alt="VSS Salesco" fill className="object-contain" />
+              <Image src="/logo.png" alt="VSS Salesco — Smart digital locks and security systems provider in Faridabad" fill className="object-contain" />
             </div>
             <div>
               <div className="font-display font-extrabold text-sm text-white">VSS SALESCO</div>
-              <div className="text-xs text-red-400 tracking-widest uppercase" style={{ fontSize: '0.6rem' }}>Vision & Security</div>
+              <div className="text-xs text-red-400 tracking-widest uppercase" style={{ fontSize: '0.6rem' }}>Since 2010</div>
             </div>
           </div>
-          <p className="text-white/50 text-sm leading-relaxed mb-6">
-            Faridabad&apos;s trusted partner for smart home automation, security, and home theater solutions.
+          <p className="text-white/50 text-sm leading-relaxed mb-4">
+            Faridabad&apos;s trusted partner for smart digital locks, CCTV security, home automation, and home theater solutions across Delhi NCR.
           </p>
-          <p className="text-white/40 text-xs">{SITE_CONFIG.tagline}</p>
+          <p className="text-white/30 text-xs">
+            Serving Faridabad, Delhi, Gurugram, Noida &amp; Greater Noida
+          </p>
         </div>
 
         {/* Services */}
@@ -103,6 +112,11 @@ export default function Footer() {
               <a href={`mailto:${SITE_CONFIG.email}`} className="text-white/50 text-sm hover:text-white transition-colors block">{SITE_CONFIG.email}</a>
             </li>
             <li>
+              <a href={SITE_CONFIG.instagram} target="_blank" rel="noopener noreferrer" className="text-white/50 text-sm hover:text-white transition-colors block">
+                Instagram: @vsssalesco
+              </a>
+            </li>
+            <li>
               <p className="text-white/50 text-sm leading-relaxed">{SITE_CONFIG.address}</p>
             </li>
           </ul>
@@ -112,7 +126,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-white/30 text-xs">© {new Date().getFullYear()} VSS Salesco. All rights reserved.</p>
+          <p className="text-white/30 text-xs">&copy; {new Date().getFullYear()} VSS Salesco. All rights reserved. Since 2010.</p>
           <p className="text-white/20 text-xs">Sector 87, Faridabad, Haryana 121002</p>
         </div>
       </div>

@@ -1,23 +1,16 @@
 import React from "react";
 import type { Metadata } from 'next';
-import { Syne, DM_Sans } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import '../styles/globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { SITE_CONFIG } from '@/lib/utils';
 import { SmoothScroll } from '@/components/layout/SmoothScroll';
 
-const syne = Syne({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-display',
-  weight: ['400', '500', '600', '700', '800'],
-  display: 'swap',
-});
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  variable: '--font-body',
-  weight: ['300', '400', '500', '600'],
+  variable: '--font-inter',
+  weight: ['300', '400', '500', '600', '700', '800'],
   display: 'swap',
 });
 
@@ -26,11 +19,13 @@ const baseUrl = 'https://vsssalesco.in';
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: `${SITE_CONFIG.name} — Smart Home Automation & Security Solutions, Faridabad`,
+    default: `${SITE_CONFIG.name} — Smart Digital Locks & Security Systems in Faridabad`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
-  description: SITE_CONFIG.description,
+  description: "Faridabad's trusted provider of smart digital locks, CCTV security systems, home automation, and premium home theater solutions since 2010. Serving homes & offices across Delhi NCR.",
   keywords: [
+    'smart digital locks Faridabad',
+    'security systems Faridabad',
     'smart home automation Faridabad',
     'home automation Delhi NCR',
     'CCTV installation Faridabad',
@@ -39,8 +34,10 @@ export const metadata: Metadata = {
     'smart locks Delhi NCR',
     'gate automation Faridabad',
     'EPABX systems Delhi',
+    'CCTV camera Faridabad',
+    'video door phone Faridabad',
+    'home security Faridabad',
     'VSS Salesco',
-    'Vision Security Solution',
   ],
   authors: [{ name: SITE_CONFIG.name, url: baseUrl }],
   creator: SITE_CONFIG.name,
@@ -49,14 +46,14 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: baseUrl,
     siteName: SITE_CONFIG.name,
-    title: `${SITE_CONFIG.name} — Smart Home Automation & Security`,
-    description: SITE_CONFIG.description,
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'VSS Salesco' }],
+    title: `${SITE_CONFIG.name} — Smart Digital Locks & Security Systems in Faridabad`,
+    description: "Faridabad's trusted provider of smart digital locks, CCTV security, home automation & home theater solutions since 2010. Serving Delhi NCR.",
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'VSS Salesco — Smart Digital Locks & Security Systems in Faridabad' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_CONFIG.name} — Smart Home Automation & Security`,
-    description: SITE_CONFIG.description,
+    title: `${SITE_CONFIG.name} — Smart Digital Locks & Security Systems`,
+    description: "Faridabad's trusted provider of smart digital locks, CCTV security, home automation & home theater solutions since 2010.",
     images: ['/og-image.png'],
   },
   alternates: { canonical: baseUrl },
@@ -72,6 +69,7 @@ const jsonLd = {
   url: baseUrl,
   telephone: SITE_CONFIG.phone,
   email: SITE_CONFIG.email,
+  foundingDate: '2010',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Sector 87',
@@ -82,14 +80,14 @@ const jsonLd = {
   },
   geo: { '@type': 'GeoCoordinates', latitude: 28.3534, longitude: 77.3410 },
   openingHours: 'Mo-Sa 09:00-19:00',
-  priceRange: '₹₹₹',
-  areaServed: ['Faridabad', 'Gurugram', 'Delhi', 'Noida'],
-  serviceType: ['Home Automation', 'Security Systems', 'Home Theater', 'CCTV', 'Smart Locks', 'Gate Automation'],
+  areaServed: ['Faridabad', 'Gurugram', 'Delhi', 'Noida', 'Greater Noida'],
+  serviceType: ['Smart Digital Locks', 'CCTV Security Systems', 'Home Automation', 'Home Theater', 'Gate Automation', 'Video Door Phones'],
+  sameAs: [SITE_CONFIG.instagram],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
+    <html lang="en" className={inter.variable}>
       <head>
         <script
           type="application/ld+json"

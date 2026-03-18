@@ -5,7 +5,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Sphere, MeshDistortMaterial, Float, Stars } from "@react-three/drei";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Play, Shield, Zap, Tv } from "lucide-react";
+import { ArrowRight, Play, Shield, Zap, Tv, Lock } from "lucide-react";
 import * as THREE from "three";
 
 // ─── 3D Scene ────────────────────────────────────────────────────────────────
@@ -88,31 +88,41 @@ export function HeroSection() {
             transition={{ duration: 0.6 }}
             className="flex flex-wrap gap-3 mb-8"
           >
-            <Badge icon={Zap} text="Home Automation" />
+            <Badge icon={Lock} text="Smart Digital Locks" />
             <Badge icon={Shield} text="Security Systems" />
+            <Badge icon={Zap} text="Home Automation" />
             <Badge icon={Tv} text="Home Theater" />
           </motion.div>
 
           <motion.h1
-            className="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tight text-gray-900 mb-6"
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tight text-gray-900 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
-            Automate.{" "}
-            <span className="gradient-text">Secure.</span>
+            Smart Digital Locks &{" "}
+            <span className="gradient-text">Advanced Security</span>
             <br />
-            Elevate.
+            Systems in Faridabad
           </motion.h1>
 
           <motion.p
-            className="text-lg md:text-xl leading-relaxed font-light text-gray-600 mb-10 max-w-xl"
+            className="text-lg md:text-xl leading-relaxed font-light text-gray-600 mb-4 max-w-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Faridabad&apos;s premier smart home partner. We design and install intelligent automation,
-            cinema-grade theaters, and cutting-edge security systems for homes and offices across Delhi NCR.
+            Upgrade to intelligent security, seamless home automation, and cinematic 
+            entertainment. Designed for modern living across Faridabad &amp; Delhi NCR.
+          </motion.p>
+
+          <motion.p
+            className="text-sm font-medium text-brand-red mb-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.35 }}
+          >
+            ⚡ Protect your home before it&apos;s too late
           </motion.p>
 
           <motion.div
@@ -121,8 +131,8 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <Link href="/contact" className="btn-primary gap-2 text-sm px-7 py-3.5">
-              Get Free Consultation <ArrowRight size={16} />
+            <Link href="/contact" className="btn-red gap-2 text-sm px-8 py-4">
+              Get Free Security Consultation Today <ArrowRight size={16} />
             </Link>
             <Link href="/case-studies" className="btn-outline gap-2 text-sm px-7 py-3.5 group">
               <Play size={14} className="group-hover:text-brand-red transition-colors" />
@@ -138,9 +148,9 @@ export function HeroSection() {
           >
             {[
               { value: "500+", label: "Projects Delivered" },
-              { value: "12+",  label: "Years Experience" },
-              { value: "98%",  label: "Client Satisfaction" },
-              { value: "NCR",  label: "Coverage Area" },
+              { value: "Since 2010", label: "Trusted Experience" },
+              { value: "98%", label: "Client Satisfaction" },
+              { value: "NCR", label: "Coverage Area" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col">
                 <span className="font-display text-2xl font-semibold text-brand-navy">{stat.value}</span>

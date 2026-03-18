@@ -5,9 +5,9 @@ import { ArrowRight, Shield, Camera, Lock, Bell, DoorOpen, Wifi } from "lucide-r
 import { FadeIn, SectionLabel } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Security Solutions – CCTV, Smart Locks, Alarms & VDP",
+  title: "Security Solutions – CCTV, Smart Digital Locks & Alarms in Faridabad",
   description:
-    "Comprehensive security solutions for homes and offices in Faridabad and Delhi NCR. CCTV, smart locks, video door phones, fire alarms, access control.",
+    "Comprehensive security solutions for homes and offices in Faridabad and Delhi NCR. CCTV systems, smart digital locks, video door phones, fire alarms, and access control since 2010.",
 };
 
 const solutions = [
@@ -82,7 +82,7 @@ export default function SecurityPage() {
           <FadeIn delay={0.3}>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-red">
-                Get Security Audit <ArrowRight size={16} />
+            Get Free Security Consultation Today <ArrowRight size={16} />
               </Link>
               <Link href="/case-studies" className="btn-outline">
                 View Projects
@@ -138,7 +138,7 @@ export default function SecurityPage() {
                         ))}
                       </div>
                       <Link href="/contact" className="btn-primary mt-8 inline-flex text-sm">
-                        Get a Quote <ArrowRight size={15} />
+                        Get Free Security Consultation Today <ArrowRight size={15} />
                       </Link>
                     </div>
                   </div>
@@ -179,7 +179,7 @@ export default function SecurityPage() {
             Our experts will visit your home or office, identify vulnerabilities, and recommend the right security plan.
           </p>
           <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-brand-red px-8 py-4 rounded-full font-semibold hover:bg-gray-50 transition-colors">
-            Book Free Visit <ArrowRight size={16} />
+            Get Free Security Consultation Today <ArrowRight size={16} />
           </Link>
         </div>
       </section>

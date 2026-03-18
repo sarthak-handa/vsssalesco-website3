@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -12,8 +12,8 @@ const navLinks = [
   { href: '/security', label: 'Security' },
   { href: '/theater', label: 'Theater' },
   { href: '/case-studies', label: 'Projects' },
-  { href: '/blog', label: 'Blog' },
   { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Navbar() {
@@ -45,14 +45,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10">
-              <Image src="/logo.png" alt="VSS Salesco" fill className="object-contain" />
+              <Image src="/logo.png" alt="VSS Salesco — Smart Digital Locks and Security Systems in Faridabad" fill className="object-contain" />
             </div>
             <div className="hidden sm:block">
               <div className={`font-display font-extrabold text-sm tracking-tight leading-none transition-colors duration-300 ${scrolled ? 'text-brand-navyD' : 'text-brand-navy'}`}>
                 VSS SALESCO
               </div>
-              <div className={`text-xs tracking-widest uppercase transition-colors duration-300 ${scrolled ? 'text-brand-red' : 'text-brand-red'}`} style={{ fontFamily: 'var(--font-display)', fontSize: '0.6rem', letterSpacing: '0.18em' }}>
-                Vision & Security
+              <div className={`text-xs tracking-widest uppercase transition-colors duration-300 text-brand-red`} style={{ fontFamily: 'var(--font-display)', fontSize: '0.6rem', letterSpacing: '0.18em' }}>
+                Since 2010
               </div>
             </div>
           </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`hover-underline text-sm font-medium transition-colors duration-200 ${
                   pathname === link.href
-                    ? scrolled ? 'text-brand-red' : 'text-brand-red'
+                    ? 'text-brand-red'
                     : scrolled ? 'text-gray-700 hover:text-brand-navyD' : 'text-gray-600 hover:text-brand-navy'
                 }`}
                 style={{ fontFamily: 'var(--font-display)', fontSize: '0.82rem', letterSpacing: '0.04em' }}
@@ -77,14 +77,12 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <a
-              href={`https://wa.me/${SITE_CONFIG.whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-sm"
+            <Link
+              href="/contact"
+              className="btn-red text-sm"
             >
-              <span>Get Quote</span>
-            </a>
+              <span>Free Consultation</span>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -127,8 +125,14 @@ export default function Navbar() {
                 </motion.div>
               ))}
             </nav>
+            <div className="mt-8">
+              <Link href="/contact" className="btn-red w-full justify-center text-sm py-4">
+                Get Free Security Consultation Today
+              </Link>
+            </div>
             <div className="mt-auto">
-              <a href={`tel:${SITE_CONFIG.phone}`} className="block text-white/60 text-sm mt-4">
+              <p className="text-white/40 text-xs mb-2">Since 2010 — Trusted across Delhi NCR</p>
+              <a href={`tel:${SITE_CONFIG.phone}`} className="block text-white/60 text-sm">
                 {SITE_CONFIG.phone}
               </a>
             </div>

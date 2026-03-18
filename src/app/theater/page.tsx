@@ -5,9 +5,9 @@ import { ArrowRight, Tv, Volume2, Monitor, Lightbulb, Layers } from "lucide-reac
 import { FadeIn, SectionLabel } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Home Theater & AV Solutions – Dolby Atmos, 4K Projection",
+  title: "Home Theater & AV Solutions – Dolby Atmos, 4K Projection | VSS Salesco Faridabad",
   description:
-    "Premium home theater design and installation. Dolby Atmos surround sound, 4K laser projectors, acoustic treatment, and video conferencing systems in Faridabad, Delhi NCR.",
+    "Premium home theater design and installation in Faridabad & Delhi NCR. Dolby Atmos surround sound, 4K laser projectors, acoustic treatment, and cinema-grade AV systems since 2010.",
 };
 
 const features = [
@@ -20,36 +20,12 @@ const features = [
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80",
-  "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800&q=80",
-  "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=800&q=80",
-  "https://images.unsplash.com/photo-1567359781514-81173b801d6a?w=800&q=80",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-  "https://images.unsplash.com/photo-1615361200141-f45040f367be?w=800&q=80",
-];
-
-const packages = [
-  {
-    name: "Essential",
-    price: "From ₹2.5L",
-    desc: "Perfect for a dedicated media room",
-    features: ["5.1 surround system", "75\" QLED display", "4K media player", "Basic acoustic treatment", "Universal remote control", "2-year warranty"],
-    highlight: false,
-  },
-  {
-    name: "Premiere",
-    price: "From ₹8L",
-    desc: "True home cinema experience",
-    features: ["Dolby Atmos 7.1.4 system", "4K laser projector", "Motorised projection screen", "Full acoustic design", "Automated lighting scenes", "4K media server", "Calibration included", "3-year AMC"],
-    highlight: true,
-  },
-  {
-    name: "Signature",
-    price: "Custom",
-    desc: "Bespoke ultra-luxury installation",
-    features: ["Dolby Atmos 9.2.6 system", "8K / dual-lens projection", "Custom designed room", "THX-certified acoustic build", "Motorised recliner integration", "Full AV rack & cabling", "Dedicated power circuit", "Lifetime support"],
-    highlight: false,
-  },
+  { src: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80", alt: "Luxury home theater with Dolby Atmos surround sound in Faridabad" },
+  { src: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800&q=80", alt: "4K laser projector home cinema installation by VSS Salesco" },
+  { src: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=800&q=80", alt: "Acoustic treated home theater room in Delhi NCR" },
+  { src: "https://images.unsplash.com/photo-1567359781514-81173b801d6a?w=800&q=80", alt: "Premium home theater seating with ambient lighting" },
+  { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", alt: "Smart home theater control system integration" },
+  { src: "https://images.unsplash.com/photo-1615361200141-f45040f367be?w=800&q=80", alt: "Professional AV equipment rack for home cinema setup" },
 ];
 
 export default function TheaterPage() {
@@ -60,7 +36,7 @@ export default function TheaterPage() {
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600&q=80"
-            alt="Luxury home theater"
+            alt="Premium home theater with immersive Dolby Atmos audio in Faridabad"
             fill className="object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/70 to-gray-950/50" />
@@ -86,9 +62,9 @@ export default function TheaterPage() {
           </FadeIn>
           <FadeIn delay={0.3}>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-red">Design My Theater <ArrowRight size={16} /></Link>
-              <Link href="#packages" className="inline-flex items-center gap-2 border border-white/20 text-white/80 px-7 py-3.5 rounded-full text-sm font-medium hover:border-white/50 hover:text-white transition-all">
-                View Packages
+              <Link href="/contact" className="btn-red">Get Free Security Consultation Today <ArrowRight size={16} /></Link>
+              <Link href="#gallery" className="inline-flex items-center gap-2 border border-white/20 text-white/80 px-7 py-3.5 rounded-full text-sm font-medium hover:border-white/50 hover:text-white transition-all">
+                View Our Work
               </Link>
             </div>
           </FadeIn>
@@ -124,18 +100,18 @@ export default function TheaterPage() {
       </section>
 
       {/* Gallery */}
-      <section className="section-pad bg-[#f8f9fc]">
+      <section className="section-pad bg-[#f8f9fc]" id="gallery">
         <div className="container-wide">
           <FadeIn>
             <h2 className="heading-lg text-gray-900 mb-10 text-center">Our Theater Installations</h2>
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {galleryImages.map((src, i) => (
+            {galleryImages.map((img, i) => (
               <FadeIn key={i} delay={i * 0.06}>
                 <div className="relative rounded-2xl overflow-hidden aspect-video group">
                   <Image
-                    src={src}
-                    alt={`Theater installation ${i + 1}`}
+                    src={img.src}
+                    alt={img.alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                     sizes="(max-width: 768px) 50vw, 33vw"
@@ -147,57 +123,44 @@ export default function TheaterPage() {
         </div>
       </section>
 
-      {/* Packages */}
-      <section className="section-pad bg-white" id="packages">
-        <div className="container-wide">
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <FadeIn><SectionLabel>Packages</SectionLabel></FadeIn>
-            <FadeIn delay={0.1}>
-              <h2 className="heading-lg text-gray-900">Choose Your Experience</h2>
-            </FadeIn>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {packages.map((pkg, i) => (
-              <FadeIn key={pkg.name} delay={i * 0.1}>
-                <div className={`rounded-2xl p-8 h-full flex flex-col ${
-                  pkg.highlight
-                    ? "bg-brand-navy text-white shadow-[0_20px_60px_rgba(30,58,95,0.4)]"
-                    : "bg-white border border-gray-100 shadow-card"
-                }`}>
-                  {pkg.highlight && (
-                    <span className="inline-block text-xs font-semibold tracking-widest uppercase bg-brand-red text-white px-3 py-1 rounded-full mb-4 self-start">
-                      Most Popular
-                    </span>
-                  )}
-                  <h3 className={`font-display text-2xl font-semibold mb-1 ${pkg.highlight ? "text-white" : "text-gray-900"}`}>
-                    {pkg.name}
-                  </h3>
-                  <p className={`text-sm mb-1 ${pkg.highlight ? "text-white/60" : "text-gray-400"}`}>{pkg.desc}</p>
-                  <p className={`font-display text-3xl font-semibold mb-6 ${pkg.highlight ? "text-white" : "text-brand-navy"}`}>
-                    {pkg.price}
-                  </p>
-                  <ul className="space-y-3 flex-1">
-                    {pkg.features.map((f) => (
-                      <li key={f} className={`flex items-center gap-2.5 text-sm ${pkg.highlight ? "text-white/80" : "text-gray-600"}`}>
-                        <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${pkg.highlight ? "bg-brand-red" : "bg-brand-navy"}`} />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href="/contact"
-                    className={`mt-8 text-center py-3 rounded-full text-sm font-semibold transition-all ${
-                      pkg.highlight
-                        ? "bg-brand-red text-white hover:bg-red-600"
-                        : "border border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white"
-                    }`}
-                  >
-                    Get This Package
-                  </Link>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+      {/* CTA (replaces pricing) */}
+      <section className="py-24 bg-gray-950 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-brand-red/10 rounded-full blur-[120px]" />
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-blue-500/8 rounded-full blur-[100px]" />
+        </div>
+        <div className="container-wide relative z-10 text-center">
+          <FadeIn>
+            <p className="text-xs font-semibold tracking-widest uppercase text-brand-red mb-4">
+              Design Your Dream Theater
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <h2 className="font-display text-4xl md:text-5xl text-white font-semibold mb-5">
+              Every Theater Is Unique.
+              <br />
+              <span className="text-white/50">Let&apos;s Design Yours.</span>
+            </h2>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <p className="text-white/50 text-lg mb-10 max-w-xl mx-auto">
+              Our AV consultants will visit your space, understand your vision, and design
+              a custom theater experience — from acoustic planning to final calibration.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.3}>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/contact" className="btn-red text-sm px-8 py-4">
+                Get Free Security Consultation Today <ArrowRight size={16} />
+              </Link>
+              <a
+                href="tel:+919990696111"
+                className="inline-flex items-center gap-2 border border-white/20 text-white/80 px-7 py-3.5 rounded-full text-sm font-medium hover:border-white/50 hover:text-white transition-all"
+              >
+                Call +91 99906 96111
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
     </>

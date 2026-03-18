@@ -5,9 +5,9 @@ import { ArrowRight, Cpu, Sun, Wind, Music, GanttChart, Phone as PhoneIcon, Zap 
 import { FadeIn, SectionLabel } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Home Automation, Gate Automation & EPABX – VSS Salesco",
+  title: "Home Automation, Gate Automation & EPABX Systems in Faridabad",
   description:
-    "Smart home automation, gate & barrier systems, and EPABX communication systems for homes and businesses in Faridabad and Delhi NCR.",
+    "Smart home automation, gate & barrier systems, and EPABX communication systems for homes and businesses in Faridabad and Delhi NCR. Since 2010.",
 };
 
 const homeAutomation = [
@@ -41,7 +41,7 @@ export default function AutomationPage() {
           </FadeIn>
           <FadeIn delay={0.3}>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-primary">Book Free Demo <ArrowRight size={16} /></Link>
+              <Link href="/contact" className="btn-primary">Get Free Security Consultation Today <ArrowRight size={16} /></Link>
               <Link href="/case-studies" className="btn-outline">View Projects</Link>
             </div>
           </FadeIn>
@@ -132,7 +132,7 @@ export default function AutomationPage() {
               </FadeIn>
               <FadeIn delay={0.4}>
                 <Link href="/contact" className="btn-primary mt-8 inline-flex text-sm">
-                  Get a Quote <ArrowRight size={15} />
+                Get Free Security Consultation Today <ArrowRight size={15} />
                 </Link>
               </FadeIn>
             </div>
@@ -193,7 +193,7 @@ export default function AutomationPage() {
               </FadeIn>
               <FadeIn delay={0.4}>
                 <Link href="/contact" className="btn-primary mt-8 inline-flex text-sm">
-                  Get a Quote <ArrowRight size={15} />
+                Get Free Security Consultation Today <ArrowRight size={15} />
                 </Link>
               </FadeIn>
             </div>
@@ -211,7 +211,7 @@ export default function AutomationPage() {
             Our consultants will visit your home, understand your lifestyle, and design a custom automation plan.
           </p>
           <Link href="/contact" className="btn-red inline-flex">
-            Book Free Consultation <ArrowRight size={16} />
+            Get Free Security Consultation Today <ArrowRight size={16} />
           </Link>
         </div>
       </section>

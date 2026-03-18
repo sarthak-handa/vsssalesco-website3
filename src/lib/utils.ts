@@ -8,8 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 export const SITE_CONFIG = {
   name: 'VSS Salesco',
   fullName: 'Vision & Security Solution',
-  tagline: 'Automate. Secure. Elevate.',
-  description: "Delhi NCR's premier provider of smart home automation, advanced security systems, and immersive home theater solutions.",
+  tagline: 'Smart Security. Intelligent Living.',
+  description: "Faridabad's trusted provider of smart digital locks, CCTV security systems, home automation, and premium home theater solutions since 2010. Serving Delhi NCR.",
   phone: '+91 9990696111',
   whatsapp: '919990696111',
   address: 'Sector 87, Faridabad, Haryana 121002',

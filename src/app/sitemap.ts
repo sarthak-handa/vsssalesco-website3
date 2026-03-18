@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/case-studies",  priority: 0.85, changeFrequency: "monthly" as const },
     { url: "/blog",          priority: 0.8,  changeFrequency: "weekly"  as const },
     { url: "/contact",       priority: 0.9,  changeFrequency: "monthly" as const },
+    { url: "/privacy",       priority: 0.3,  changeFrequency: "yearly"  as const },
   ];
 
   return routes.map((r) => ({

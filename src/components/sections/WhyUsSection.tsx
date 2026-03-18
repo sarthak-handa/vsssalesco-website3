@@ -8,8 +8,8 @@ import { FadeIn, SectionLabel, StatCard } from "@/components/ui";
 const reasons = [
   {
     icon: Award,
-    title: "12+ Years Experience",
-    desc: "Over a decade serving Delhi NCR homeowners and businesses with smart technology solutions.",
+    title: "Since 2010 — 15+ Years",
+    desc: "Over 15 years serving Delhi NCR homeowners and businesses with smart digital locks and security systems.",
   },
   {
     icon: Wrench,
@@ -54,14 +54,14 @@ export function WhyUsSection() {
                   <div className="relative rounded-2xl overflow-hidden h-52">
                     <Image
                       src="https://images.unsplash.com/photo-1586953208270-f3e7b4d4cc77?w=600&q=80"
-                      alt="Smart home installation"
+                      alt="Smart home automation installation by VSS Salesco in Faridabad"
                       fill className="object-cover"
                     />
                   </div>
                   <div className="relative rounded-2xl overflow-hidden h-36">
                     <Image
                       src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
-                      alt="CCTV installation"
+                      alt="CCTV security camera installation in Faridabad by VSS Salesco"
                       fill className="object-cover"
                     />
                   </div>
@@ -70,14 +70,14 @@ export function WhyUsSection() {
                   <div className="relative rounded-2xl overflow-hidden h-36">
                     <Image
                       src="https://images.unsplash.com/photo-1615361200141-f45040f367be?w=600&q=80"
-                      alt="Home theater"
+                      alt="Premium home theater with Dolby Atmos audio in Delhi NCR"
                       fill className="object-cover"
                     />
                   </div>
                   <div className="relative rounded-2xl overflow-hidden h-52">
                     <Image
                       src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80"
-                      alt="Smart interior"
+                      alt="Smart home interior with automated lighting and security"
                       fill className="object-cover"
                     />
                   </div>
@@ -91,7 +91,7 @@ export function WhyUsSection() {
                 transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
               >
                 <p className="font-display text-3xl font-semibold text-brand-navy">500+</p>
-                <p className="text-xs text-gray-500 font-medium">Happy Clients</p>
+                <p className="text-xs text-gray-500 font-medium">Installations</p>
               </motion.div>
             </div>
           </FadeIn>
@@ -139,7 +139,7 @@ export function WhyUsSection() {
         <FadeIn delay={0.2}>
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-gray-200">
             <StatCard value="500+" label="Projects Delivered" />
-            <StatCard value="12+" label="Years in Business" color="red" />
+            <StatCard value="2010" label="Founded" color="red" />
             <StatCard value="50+" label="Brand Partners" />
             <StatCard value="98%" label="Client Retention" color="red" />
           </div>

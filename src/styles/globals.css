@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 :root {
-  --font-display: 'Syne', Georgia, serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 
   --navy:    #1e3a5f;
   --navyD:   #0f2240;
@@ -152,6 +152,35 @@ html.lenis, html.lenis body {
   }
 }
 
+/* ─── Theater Soundwave Animation ─────────────────────────────────────────── */
+@keyframes soundwave {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.4; box-shadow: 0 0 8px rgba(192,57,43,0.3); }
+  50% { opacity: 1; box-shadow: 0 0 24px rgba(192,57,43,0.6); }
+}
+
+@keyframes cinema-fade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.soundwave-bar {
+  display: inline-block;
+  width: 4px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #c0392b 0%, #e74c3c 50%, #f87171 100%);
+  animation: soundwave 1.2s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+.theater-glow {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }
@@ -160,4 +189,3 @@ html.lenis, html.lenis body {
 
 /* Selection color */
 ::selection { background: rgba(30,58,95,0.15); color: var(--navyD); }
-

@@ -18,21 +18,22 @@ export default function CTASection() {
           <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full blur-3xl" />
 
           <div className="relative z-10">
-            <p className="section-label mb-4" style={{ color: '#f87171' }}>Get Started Today</p>
+            <p className="section-label mb-4" style={{ color: '#f87171' }}>Smart Security Since 2010</p>
             <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white leading-tight mb-5">
-              Ready for a smarter,<br />safer home?
+              Get a Free Security<br />Consultation Today
             </h2>
             <p className="text-white/60 text-lg mb-10 max-w-xl mx-auto">
-              Book a free site visit and consultation. Our experts will design a custom solution tailored to your space and budget.
+              Our experts will visit your home or office, assess your security needs, and design
+              a custom smart solution — absolutely free, no obligations.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact" className="btn-primary">
-                <span>Book Free Consultation</span>
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-4 rounded-full font-semibold text-sm hover:bg-red-600 transition-all shadow-red hover:-translate-y-0.5">
+                <span>Get Free Security Consultation Today</span>
               </Link>
               <a
                 href={`tel:${SITE_CONFIG.phone}`}
-                className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 text-white font-display font-semibold text-sm rounded hover:border-white/40 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 text-white font-display font-semibold text-sm rounded-full hover:border-white/40 transition-all"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

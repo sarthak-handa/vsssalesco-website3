@@ -5,13 +5,13 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 import { FadeIn, SectionLabel, StatCard } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "About VSS Salesco – Our Story, Vision & Team",
+  title: "About VSS Salesco – Smart Security & Home Automation Since 2010",
   description:
-    "Learn about VSS Salesco — Faridabad's trusted smart home automation and security solutions provider with 12+ years of experience across Delhi NCR.",
+    "Learn about VSS Salesco — Faridabad's trusted smart digital locks, home automation, and security solutions provider since 2010. Serving Delhi NCR.",
 };
 
 const milestones = [
-  { year: "2012", event: "Founded in Faridabad with a focus on residential CCTV installation." },
+  { year: "2010", event: "Founded in Faridabad with a focus on residential CCTV installation and smart security systems." },
   { year: "2015", event: "Expanded into home automation, bringing KNX-based systems to NCR villas." },
   { year: "2018", event: "Launched dedicated home theater division. First Dolby Atmos installation in the region." },
   { year: "2020", event: "Crossed 300 projects. Added EPABX and gate automation services." },
@@ -43,7 +43,7 @@ export default function AboutPage() {
               <FadeIn><SectionLabel>About VSS Salesco</SectionLabel></FadeIn>
               <FadeIn delay={0.1}>
                 <h1 className="heading-xl text-gray-900 mb-6">
-                  12 Years of{" "}
+                  15+ Years of{" "}
                   <span className="gradient-text">Building Smarter Spaces</span>
                 </h1>
               </FadeIn>
@@ -58,7 +58,7 @@ export default function AboutPage() {
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   {[
                     "500+ projects delivered",
-                    "12+ years in business",
+                    "Since 2010 — 15+ years",
                     "50+ brand partnerships",
                     "Serving all of Delhi NCR",
                     "Certified engineering team",
@@ -110,7 +110,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
             {[
               { value: "500+", label: "Projects Delivered", color: "red" as const },
-              { value: "12+",  label: "Years Experience" },
+              { value: "15+",  label: "Years Since 2010" },
               { value: "50+",  label: "Brand Partnerships", color: "red" as const },
               { value: "98%",  label: "Client Satisfaction" },
             ].map((s) => (
