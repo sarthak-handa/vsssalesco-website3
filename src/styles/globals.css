@@ -1,0 +1,163 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Syne', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  --navy:    #1e3a5f;
+  --navyD:   #0f2240;
+  --red:     #c0392b;
+  --redL:    #e74c3c;
+  --white:   #ffffff;
+  --offwhite:#f8f9fc;
+  --gray-50: #f9fafb;
+  --gray-100:#f3f4f6;
+  --gray-200:#e5e7eb;
+  --gray-400:#9ca3af;
+  --gray-600:#4b5563;
+  --gray-800:#1f2937;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: var(--gray-800);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+@layer components {
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-pad {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .heading-xl {
+    font-family: var(--font-display);
+    @apply text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tight;
+  }
+
+  .heading-lg {
+    font-family: var(--font-display);
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight;
+  }
+
+  .heading-md {
+    font-family: var(--font-display);
+    @apply text-2xl md:text-3xl font-semibold leading-snug;
+  }
+
+  .body-lg {
+    @apply text-lg md:text-xl leading-relaxed font-light;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-navy text-white px-7 py-3.5 rounded-full
+           font-medium text-sm tracking-wide
+           hover:bg-brand-navyD transition-all duration-300
+           shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-red {
+    @apply inline-flex items-center gap-2 bg-brand-red text-white px-7 py-3.5 rounded-full
+           font-medium text-sm tracking-wide
+           hover:bg-brand-redL transition-all duration-300
+           shadow-red hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-brand-navy text-brand-navy
+           px-7 py-3.5 rounded-full font-medium text-sm tracking-wide
+           hover:bg-brand-navy hover:text-white transition-all duration-300
+           hover:-translate-y-0.5;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/60
+           rounded-2xl shadow-glass;
+  }
+
+  .service-card {
+    @apply bg-white border border-gray-100 rounded-2xl p-8 shadow-card
+           hover:shadow-card-hover hover:-translate-y-1.5
+           transition-all duration-500 ease-out cursor-pointer;
+  }
+
+  .tag {
+    @apply inline-block text-xs font-semibold tracking-widest uppercase
+           text-brand-red bg-red-50 px-3 py-1 rounded-full;
+  }
+
+  .divider {
+    @apply w-12 h-0.5 bg-brand-red my-4;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, var(--navy) 0%, var(--red) 100%);
+  }
+
+  /* Noise texture overlay */
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  /* Scaffold compatibility */
+  .section-label {
+    @apply text-xs font-semibold tracking-widest uppercase text-brand-red;
+  }
+
+  .gradient-text-light {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #ffffff 0%, #f87171 100%);
+  }
+
+  .hover-underline {
+    @apply relative;
+  }
+  .hover-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-px bg-brand-red scale-x-0 origin-left transition-transform duration-300;
+  }
+  .hover-underline:hover::after {
+    @apply scale-x-100;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: var(--navy); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--navyD); }
+
+/* Selection color */
+::selection { background: rgba(30,58,95,0.15); color: var(--navyD); }
+
