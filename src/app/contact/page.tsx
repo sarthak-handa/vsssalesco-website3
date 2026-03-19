@@ -25,7 +25,7 @@ const contactInfo = [
     icon: MapPin,
     label: "Office Address",
     value: "Sector 87, Faridabad, Haryana 121002",
-    href: "https://maps.google.com/?q=Sector+87+Faridabad+Haryana",
+    href: "https://maps.app.goo.gl/cSB1tS8r14etebGMA",
     action: "Get Directions",
   },
   {
