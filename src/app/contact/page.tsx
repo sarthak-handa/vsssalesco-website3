@@ -77,13 +77,13 @@ export default function ContactPage() {
           <FadeIn><SectionLabel>Contact Us</SectionLabel></FadeIn>
           <FadeIn delay={0.1}>
             <h1 className="heading-xl text-gray-900 mb-6 max-w-2xl">
-              Let&apos;s Build Something{" "}
+              Let's Build Something{" "}
               <span className="gradient-text">Together</span>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="body-lg text-gray-500 max-w-xl">
-              Tell us about your project. We&apos;ll visit your space, understand your needs, and
+              Tell us about your project. We'll visit your space, understand your needs, and
               design a custom solution — absolutely free.
             </p>
           </FadeIn>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                       </div>
                       <h3 className="font-display text-2xl font-semibold text-gray-900 mb-3">Message Sent!</h3>
                       <p className="text-gray-500 mb-6 max-w-sm">
-                        Thank you for reaching out. We&apos;ll call you back within 2 hours during business hours.
+                        Thank you for reaching out. We'll call you back within 2 hours during business hours.
                       </p>
                       <button
                         onClick={() => setSubmitted(false)}
@@ -261,7 +261,7 @@ export default function ContactPage() {
             <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-card h-80">
               <iframe
                 title="VSS Salesco Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.4!2d77.3!3d28.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSector+87%2C+Faridabad%2C+Haryana+121002!5e0!3m2!1sen!2sin!4v1600000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.2486282956415!2d77.33802247374196!3d28.411753794075455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8313bf74cd05d2d9%3A0x111dce0908b855a4!2sVss%20Salesco!5e0!3m2!1sen!2sin!4v1773905186455!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
