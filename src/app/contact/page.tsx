@@ -17,8 +17,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@vsssalesco.in",
-    href: "mailto:info@vsssalesco.in",
+    value: "vsssalesco12@gmail.com",
+    href: "mailto:vsssalesco12@gmail.com",
     action: "Send Email",
   },
   {
