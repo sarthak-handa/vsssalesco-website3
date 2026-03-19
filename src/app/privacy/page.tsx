@@ -23,7 +23,7 @@ export default function PrivacyPage() {
             <h2>Cookies</h2>
             <p>Our website may use essential cookies to ensure proper functionality. We do not use third-party advertising cookies.</p>
             <h2>Contact</h2>
-            <p>If you have any questions about this privacy policy, please contact us at info@vsssalesco.in or call +91 99906 96111.</p>
+            <p>If you have any questions about this privacy policy, please contact us at vsssalesco12@gmail.com or call +91 99906 96111.</p>
           </div>
         </FadeIn>
       </div>
