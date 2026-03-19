@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
   whatsapp: '919990696111',
   address: 'Sector 87, Faridabad, Haryana 121002',
   website: 'https://vsssalesco.in',
-  email: 'info@vsssalesco.in',
+  email: 'vsssalesco12@gmail.com',
   instagram: 'https://instagram.com/vsssalesco',
   mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.5!2d77.3410!3d28.3534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc8c0e6e7f7f%3A0x1234567890abcdef!2sSector%2087%2C%20Faridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1234567890123',
 };
