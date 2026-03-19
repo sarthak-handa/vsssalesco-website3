@@ -53,7 +53,7 @@ export function WhyUsSection() {
                 <div className="space-y-4">
                   <div className="relative rounded-2xl overflow-hidden h-52">
                     <Image
-                      src="https://images.unsplash.com/photo-1586953208270-f3e7b4d4cc77?w=600&q=80"
+                      src="https://plus.unsplash.com/premium_photo-1727154572165-099e9dc9d83c?q=80&w=1600&auto=format&fit=crop"
                       alt="Smart home automation installation by VSS Salesco in Faridabad"
                       fill className="object-cover"
                     />
