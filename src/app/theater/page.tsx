@@ -23,7 +23,7 @@ const galleryImages = [
   { src: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80", alt: "Luxury home theater with Dolby Atmos surround sound in Faridabad" },
   { src: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800&q=80", alt: "4K laser projector home cinema installation by VSS Salesco" },
   { src: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=800&q=80", alt: "Acoustic treated home theater room in Delhi NCR" },
-  { src: "https://images.unsplash.com/photo-1567359781514-81173b801d6a?w=800&q=80", alt: "Premium home theater seating with ambient lighting" },
+  { src: "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=1200&auto=format&fit=crop", alt: "Premium home theater seating with ambient lighting" },
   { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", alt: "Smart home theater control system integration" },
   { src: "https://images.unsplash.com/photo-1615361200141-f45040f367be?w=800&q=80", alt: "Professional AV equipment rack for home cinema setup" },
 ];
